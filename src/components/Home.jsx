@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div
       name='home'
-      className='h-screen w-full bg-gradient-to-b from-black to-gray-800'
+      className='h-screen w-full pt-20 md:pt-0 bg-gradient-to-b from-black via-black to-gray-800'
     >
       <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row'>
         <div className='flex flex-col justify-center h-full'>
@@ -15,9 +15,9 @@ const Home = () => {
           My name is Giovanni. I have a passion for languages, whether they are programming languages or spoken dialects. As a Full Stack Engineer with experience in Next.js, React, Vue, and TailwindCSS, I enjoy diving deep into technology. I hold a degree from IMT Mines Albi and am currently seeking a Full Stack Engineering position in Barcelona.
           </p>
           <div>
-            <button>
+            <button className='group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-stone-900 to-yellow-700 cursor-pointer'>
               View my work
-              <span>
+              <span className='ml-1 group-hover:rotate-90 duration-300'>
                 <FaChevronRight />
               </span>
             </button>
