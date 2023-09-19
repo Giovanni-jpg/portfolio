@@ -1,3 +1,7 @@
+## Inspiration of this repo
+This portfolio has been inspired by the work of [Yash Patel](https://github.com/theyashpatel) \
+The initial repo inspiring my work can be found here: [YT React One Portfolio](https://github.com/theyashpatel/yt-react-one-portfolio)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
