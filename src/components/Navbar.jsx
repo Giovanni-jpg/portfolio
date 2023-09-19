@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -28,18 +29,20 @@ const Navbar = () => {
   ];
   return (
     <div className='flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed'>
-      <div>
+      <Link to='home' smooth duration={700} className='cursor-pointer duration-200'>
         <h1 className='text-6xl font-signature ml-2'>Giovanni Massiot</h1>
-      </div>
+      </Link>
 
       <ul className='hidden md:flex'>
         {links.map(({ id, text }) => {
           return (
             <li
               key={id}
-              className='px-4 cursor-pointer text-gray-500 hover:scale-105 duration-200'
+              className='px-4 cursor-pointer font-medium text-gray-500 hover:scale-105 duration-200'
             >
-              {text}
+              <Link to={text.toLowerCase()} smooth duration={700}>
+                {text}
+              </Link>
             </li>
           );
         })}
@@ -60,7 +63,14 @@ const Navbar = () => {
                 key={id}
                 className='px-4 py-6 text-4xl cursor-pointer text-gray-500 hover:scale-105 duration-200'
               >
-                {text}
+                <Link
+                  onClick={() => setNav(!nav)}
+                  to={text.toLowerCase()}
+                  smooth
+                  duration={700}
+                >
+                  {text}
+                </Link>
               </li>
             );
           })}
