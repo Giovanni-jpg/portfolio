@@ -4,11 +4,11 @@ import allRead from "../assets/portfolio/allread.png";
 import sthdpixs from "../assets/portfolio/sthdpixs.png";
 import laceLink from "../assets/portfolio/lacelink.png";
 import portfolio from "../assets/portfolio/my-portfolio.png";
-import vue from "../assets/vue.png";
+import vue from "../assets/vue-bgless.png";
 import flask from "../assets/flask.png";
 import javascript from "../assets/javascript.png";
 import docker from "../assets/docker.png";
-import github from "../assets/github.png";
+import pinia from "../assets/pinia.png";
 import react from "../assets/react.png";
 import sanity from "../assets/sanity.png";
 import vercel from "../assets/vercel.png";
@@ -38,7 +38,7 @@ const Portfolio = () => {
       techStack: [
         { name: "Javascript & Vue.js", icon: vue },
         { name: "Docker", icon: docker },
-        { name: "GitHub", icon: github },
+        { name: "Pinia for state management", icon: pinia },
       ],
     },
     {
@@ -82,7 +82,7 @@ const Portfolio = () => {
   return (
     <div
       name="portfolio"
-      className="bg-gradient-to-b from-black to-gray-800 w-full text-white"
+      className="bg-gradient-to-b from-black to-gray-800 w-full text-white pb-10"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-2">
@@ -116,7 +116,14 @@ const Portfolio = () => {
                         {item.name}
                       </span>
                       {item.icon && (
-                        <img src={item.icon} alt="tech icon" className="h-8 w-8 mr-2 rounded-md hover:scale-110 duration-200"/>
+                        <img 
+                          src={item.icon}
+                          alt="tech icon"
+                          className={
+                            item.name === "Pinia for state management" ?
+                            "h-8 w-6 mr-3 rounded-md hover:scale-110 duration-200":
+                            "h-8 w-8 mr-2 rounded-md hover:scale-110 duration-200"
+                          }/>
                       )}
                     </div>
                   ))}
