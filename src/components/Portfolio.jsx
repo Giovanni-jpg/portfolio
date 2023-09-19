@@ -7,7 +7,7 @@ import portfolio from "../assets/portfolio/my-portfolio.png";
 import vue from "../assets/vue-bgless.png";
 import flask from "../assets/flask.png";
 import javascript from "../assets/javascript.png";
-import docker from "../assets/docker.png";
+import docker from "../assets/docker-bgless.png";
 import pinia from "../assets/pinia.png";
 import react from "../assets/react.png";
 import sanity from "../assets/sanity.png";
