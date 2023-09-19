@@ -14,6 +14,7 @@ import sanity from "../assets/sanity.png";
 import vercel from "../assets/vercel.png";
 import nextjs from "../assets/nextjs.png";
 import supabase from "../assets/supabase.png";
+import tailwind from "../assets/tailwind.png";
 
 const Portfolio = () => {
   const portfolios = [
@@ -60,6 +61,7 @@ const Portfolio = () => {
       techStack: [
         { name: "Javascript & React", icon: react },
         { name: "Vercel to deploy", icon: vercel },
+        { name: "Tailwind CSS", icon: tailwind }
       ],
       link: "https://github.com/Giovanni-jpg/portfolio",
       portfolio: true,
