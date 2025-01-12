@@ -41,6 +41,7 @@ const Portfolio = () => {
         { name: 'Docker', icon: docker },
         { name: 'Pinia for state management', icon: pinia },
       ],
+      link: 'https://www.youtube.com/watch?v=IB5RS8-iYDU'
     },
     {
       id: 3,
